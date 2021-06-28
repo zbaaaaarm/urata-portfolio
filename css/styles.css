@@ -178,7 +178,7 @@ header {
 
 /* ファーストビュー */
 .fv {
-  background-image: url(file:///C:/Users/zbaaa/Documents/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%82%A2%E3%82%A6%E3%83%88%E3%83%97%E3%83%83%E3%83%88/shogo-cyukyu/img/%E6%A5%95%E5%86%86%E5%BD%A2%201.png);
+  background-image: url(img/background-circle.png);
   background-position: top -50px right -75px;
   background-size: contain;
   background-repeat: no-repeat;
