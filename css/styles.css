@@ -58,7 +58,7 @@ header {
 .pc-menu li:last-child {
   padding-right: 0;
 }
-.pc-menu li :hover {
+.pc-menu li:hover {
   color: #797979;
   transition: 0.5s;
 }
