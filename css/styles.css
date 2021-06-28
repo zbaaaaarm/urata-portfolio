@@ -14,11 +14,11 @@ body a {
 
 body li {
   list-style-type: none;
+  transition: color 0.5s;
 }
 
 body li:hover {
   color: #797979;
-  transition: 0.5s;
 }
 
 /* ヘッダー */
