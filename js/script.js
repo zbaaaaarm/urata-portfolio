@@ -11,6 +11,19 @@ $(function() {
         $('html, body').animate({'scrollTop': position}, 500);
     });
 
+    // 要素をふわっと表示
+    var fadeIn = $('.fade-in');
+    $(window).scroll(function () {
+    $(fadeIn).each(function () {
+      var offset = $(this).offset().top;
+      var scroll = $(window).scrollTop(); 
+      var windowHeight = $(window).height();
+      if (scroll > offset - windowHeight + 150) {
+        $(this).addClass("scroll-in");
+      }
+    });
+  });
+
     // FAQアコーディオン
     $('.faq-list-item').click(function() {
         var $answer = $(this).find('.answer');
@@ -22,30 +35,35 @@ $(function() {
             $answer.addClass('open');
         }
     });
-
 });
 
 // Swiper
 var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    centeredSlides: true,
     loop: true,
+    loopAdditionalSlides: 100,
     direction: 'horizontal',
     autoplay: {
-      delay: 5000,
+      delay: 0,
     },
-    
-    slideToClikedSlide: true,
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
+    speed: 5000,
     breakpoints: {
-      414: {
-        slidesPerView: 1.
-      },
-      980: {
-        slidesPerView: 2,
-      },
-    },
+        1192: {
+            centeredSlides: true,
+            slidesPerView: 3.5,
+            spaceBetween: 10,
+        },
+        850: {
+            centeredSlides: true,
+            slidesPerView: 2.5,
+            spaceBetween: 10,
+        },
+        508: {
+            centeredSlides: true,
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+        },
+
+    }
   });
