@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -76,36 +76,42 @@
           <p>FEATURES</p>
         </div>
 
-        <h3>高速コーディング</h3>
-        <div class="fea-wrapper coding">
-          <img src="img/cto.png">
-          <div class="fea-content">
-            <h4>コーディングに特化したフリーランスのため、<br>スピード感を持った開発が可能。</h4>
-            <p>開発は常にスピードとの勝負です。<br>ユアコーディングはコーディングに特化しているため、<br>素早く納品することで、クライアントがデザインに注力する助けとなります。</p>
+        <div class="fea-container fade-in fade-in-up">
+          <h3>高速コーディング</h3>
+          <div class="fea-wrapper coding">
+            <img src="img/cto.png">
+            <div class="fea-content">
+              <h4>コーディングに特化したフリーランスのため、<br>スピード感を持った開発が可能。</h4>
+              <p>開発は常にスピードとの勝負です。<br>ユアコーディングはコーディングに特化しているため、<br>素早く納品することで、クライアントがデザインに注力する助けとなります。</p>
+            </div>
           </div>
         </div>
 
-        <h3>高品質</h3>
-        <div class="fea-wrapper quality">
-          <div class="fea-content">
-            <h4>正しいマークアップで、<br> 内部SEOに強いコーディングを<br>デフォルトで行います。</h4>
-            <p>ユアコーディングでは、「予測しやすい」「再利用しやすい」「保守しやすい」「拡張しやすい」と言った設計をもとに、きちんとコーディングを行うため、納品後も安心です。</p>
+        <div class="fea-container fade-in fade-in-up">
+          <h3>高品質</h3>
+          <div class="fea-wrapper quality">
+            <div class="fea-content">
+              <h4>正しいマークアップで、<br> 内部SEOに強いコーディングを<br>デフォルトで行います。</h4>
+              <p>ユアコーディングでは、「予測しやすい」「再利用しやすい」「保守しやすい」「拡張しやすい」と言った設計をもとに、きちんとコーディングを行うため、納品後も安心です。</p>
+            </div>
+            <img src="img/building_website.png">
           </div>
-          <img src="img/building_website.png">
         </div>
 
-        <h3>迅速なレスポンス</h3>
-        <div class="fea-wrapper response">
-          <img src="img/new_message.png">
-          <div class="fea-content">
-            <h4>原則いただいたメッセージは、<br>業務時間内であれば6時間以内に<br>お返しいたします。</h4>
-            <p>連絡を返さないフリーランスが多い中、<br>ユアコーディングでは定期的な進捗報告など、<br>社会人としての基本を踏まえて仕事を行なっております。</p>
+        <div class="fea-container fade-in fade-in-up">
+          <h3>迅速なレスポンス</h3>
+          <div class="fea-wrapper response">
+            <img src="img/new_message.png">
+            <div class="fea-content">
+              <h4>原則いただいたメッセージは、<br>業務時間内であれば6時間以内に<br>お返しいたします。</h4>
+              <p>連絡を返さないフリーランスが多い中、<br>ユアコーディングでは定期的な進捗報告など、<br>社会人としての基本を踏まえて仕事を行なっております。</p>
+            </div>
           </div>
         </div>
 
       </section>
 
-      <section id="price">
+      <section id="price" class="fade-in fade-in-up">
         <div class="section-title">
           <h2>価格</h2>
           <p>PRICE</p>
@@ -133,7 +139,7 @@
         <p>＊詳細な価格はページや仕様によって異なります</p>
       </section>
 
-      <section id="faq">
+      <section id="faq" class="fade-in fade-in-up">
         <div class="section-title">
           <h2>よくある質問</h2>
           <p>FAQ</p>
@@ -153,7 +159,7 @@
           </div>
       </section>
 
-      <section id="blog">
+      <section id="blog" class="fade-in fade-in-up">
         <div class="section-title">
           <h2>ブログ</h2>
           <p>BLOG</p>
@@ -184,12 +190,11 @@
           </div>
       </section>
 
-      <section id="works">
+      <section id="works" class="fade-in fade-in-up">
         <div class="section-title">
           <h2>制作実績</h2>
           <p>WORKS</p>
         </div>
-        <div class="swiper-custom-parent">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -217,8 +222,6 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </section>
 
@@ -260,9 +263,10 @@
         当サイトは、浦田和栄がポートフォリオとして、デザインカンプからコーディング制作した架空サイトです。</p>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <!-- jQuery CDN -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--  -->
     <script src="js/script.js"></script>
