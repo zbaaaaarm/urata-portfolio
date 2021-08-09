@@ -19,6 +19,34 @@ body li {
   list-style-type: none;
 }
 
+/* スクロールCSS */
+.fade-in {
+  opacity: 0;
+  transition-duration: 1000ms;
+  transition-property: opacity, transform;
+}
+
+.fade-in-up {
+  transform: translate(0, 50px);
+}
+
+.fade-in-down {
+  transform: translate(0, -50px);
+}
+
+.fade-in-left {
+  transform: translate(-50px, 0);
+}
+
+.fade-in-right {
+  transform: translate(50px, 0);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .button {
   display: block;
   background: linear-gradient(to right, #FA41CC, #6020B0);
@@ -201,6 +229,9 @@ header {
   }
   .fv-content {
     text-align: center;
+  }
+  .fv-content .button {
+    margin: 0 auto;
   }
 }
  @media (max-width: 768px) {
@@ -399,50 +430,53 @@ dd {
 }
 
 /* 制作実績 */
-.swiper-custom-parent {
-  max-width: 900px;
-  padding: 69px 0 90px 0;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+
+#works {
+  margin-bottom: 90px;
+}
+#works .section-title p {
+  margin-bottom: 60px;
+}
+.swiper-container {
+  width: 100%;
+  height: 460px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+.swiper-slide {
+  padding: 0;
+  margin: 0;
 }
 
-.swiper-container {
-  width: 700px;
-  height: 460px;
-  margin-left: auto;
-  margin-right: auto;
-
+@media (max-width: 508px) {
+  .swiper-container {
+    width: 352px !important;
+  }
+  .swiper-slide {
+    width: 332px;
+    margin: 0 auto;
+  }
+  .works-content {
+    margin: 0 auto;
+  }
 }
 
 .works-content {
-  width: 322px;
-  height: 407px;
-  padding: 10px;
-  border: solid 2px #DDDDDD;
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 332px !important;
+  height: 450px !important;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+}
+.works-content img {
+  width: 332px;
+  height: 204px;
+}
+.works-content h3, p {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-:root {
-  --swiper-navigation-color: #DDDDDD;
-}
-
-@media (max-width: 980px) {
-  .swiper-custom-parent {
-    width: 100%;
-  }
-  .swiper-container {
-    width: 80%;
-  }
-  .works-content {
-    width: 80%;
-  }
-  .works-content img {
-    width: 100%;
-  }
-}
 /* お問い合わせ */
 #contact {
   background: linear-gradient(to right, #05A5FA, #63FBD7);
