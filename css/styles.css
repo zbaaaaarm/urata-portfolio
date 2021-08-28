@@ -443,6 +443,8 @@ dd {
   margin: 0 auto;
   padding: 0;
   text-align: left;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .swiper-slide {
   padding: 0;
